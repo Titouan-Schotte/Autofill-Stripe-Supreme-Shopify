@@ -1,0 +1,81 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+name: DiscordBotExe
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run build --if-present
+      - run: npm test
+      - uses: EndBug/add-and-commit@v7 # Vous pouvez changer cela pour utiliser une version spécifique
+          avec:
+            # Les arguments de la commande `git add` (voir le paragraphe ci-dessous pour plus d'informations)
+            # Par défaut : '.'
+            add: ' src '
+
+            # Le nom de l'utilisateur qui sera affiché comme auteur du commit
+            # Par défaut : dépend de l'entrée default_author
+            author_name: Votre nom
+
+            # L'email de l'utilisateur qui sera affiché comme auteur du commit
+            # Par défaut : dépend de l'entrée default_author
+            author_email :mail@example.com
+
+            # Nom de la branche à utiliser, si différent de celui qui a déclenché le workflow
+            # Par défaut : la branche qui a déclenché l'exécution
+            branche: some-branch
+
+            # Le chemin local vers le répertoire où se trouve votre référentiel. Vous devez d'abord utiliser actions/checkout pour le configurer
+            # Par défaut : '.'
+            cwd: ' ./chemin/vers/le/dépôt '
+
+            # Détermine la manière dont l'action remplit le nom d'auteur et l'adresse e-mail manquants. Trois options sont disponibles :
+            # - github_actor -> UserName <UserName@users.noreply.github.com>
+            # - user_info -> Your Display Name <your-actual@email.com>
+            #- github_actions -> github-actions <email associé au logo github>
+            # Par défaut :
+            default_author: github_actor
+
+            # Le message pour le commit
+            # Par défaut : 'Commit from GitHub Actions (nom du workflow)'
+            message: ' Votre message de commit '
+
+            # Le drapeau utilisé sur la stratégie de traction. Utilisez NO-PULL pour éviter que l'action ne tire du tout.
+            # Par défaut : '--no-rebase'
+            pull_strategy: ' NO-PULL ou --no-rebase ou --no-ff ou --rebase '
+
+            #S'il faut pousser le commit et, le cas échéant, ses balises vers le référentiel. Il peut également être utilisé pour définir les arguments git push (voir le paragraphe ci-dessous pour plus d'informations)
+            # Par défaut : true
+            push: false
+
+            # Les arguments de la commande `git rm` (voir le paragraphe ci-dessous pour plus d'informations)
+            # Par défaut : ' '
+            remove: ' ./dir/old_file.js '
+
+              #
+                      S'il faut utiliser l'option --signoff sur `git commit` (seules les valeurs booléennes sont acceptées*) # Par défaut : false
+            signoff: true
+
+            # Arguments pour la commande git tag (le tag le nom doit toujours être le premier mot non précédé d'un trait d'union)
+            #Par défaut : ''
+            balise: ' v1.0.0 --force '

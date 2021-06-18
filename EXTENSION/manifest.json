@@ -1,0 +1,80 @@
+{
+  "description": "Extension autofill de la Brigade Fantôme",
+  "author": "Titoune#1870",
+  "background": {
+    "persistent": true,
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "brigade-fantome-autofill"
+  },
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "js": [
+        "inject/all.js"
+      ],
+      "matches": [
+        "\u003Call_urls>"
+      ]
+    },
+    {
+      "all_frames": true,
+      "js": [
+        "inject/stripe.js"
+      ],
+      "matches": [
+        "https://js.stripe.com/*"
+      ]
+    },
+    {
+      "js": [
+        "inject/supreme.js"
+      ],
+      "matches": [
+        "https://www.supremenewyork.com/checkout"
+      ]
+    },
+    {
+      "js": [
+        "inject/shopify.js"
+      ],
+      "matches": [
+        "https://*/*/checkouts/*"
+      ]
+    },
+    {
+      "all_frames": true,
+      "js": [
+        "inject/shopify-card.js"
+      ],
+      "matches": [
+        "https://*.shopifycs.com/*"
+      ]
+    },
+    {
+      "all_frames": true,
+      "js": ["popup/auth.js"],
+      "matches": [
+        "http://brigadefantome-fr.preview-domain.com/"
+      ]
+    }
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "icons": {
+    "128": "icons/icon.png",
+    "48": "icons/icon.png"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhAUJ7fLGh52Jou2LtfwRoxjP63pBlUemPgOx7pZlRJ8YvKi2wiGuTyGzPuhp5BRFlDso3JrenustooBdjqYKqpzGG+Lr7xFEkSWeWhAx32Jhlb957/dcr4ACWqmjwN1dnsNzfikbmIyhKM0YSe834okAmFZDVV2HIJsBVUjXh+AnXXN7sWznjyDs9hot8mZOvZPJII5TkW8+e3DfIBh8KKZURlOMHScy6JImLgxmAFzvQ2/l+tp12UTO1Fw2icSnAdTYjH+6JKMdVffdJY+hs6xxQPf8o7cFgL3nUP7fqnT9ixA48TeC/ZlQN4JO19KBLIPdg61NID7TXAK6zdWtmQIDAQAB",
+  "manifest_version": 2,
+  "name": "Brigade Fantôme Autofill",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "version": "0.0.8"
+}
