@@ -128,8 +128,8 @@ $p = "";
 if ($id != 0) {
 
     //DISCORD PROMPT
-    $conn_id = ftp_connect(<YOUR DOMAIN NAME>);
-    ftp_login($conn_id, <USERNAME>, <PASSWORD>);
+    $conn_id = ftp_connect(<YOUR DOMAIN NAME of YOUR BOT DISCORD>);
+    ftp_login($conn_id, <USERNAME of YOUR BOT DISCORD>, <PASSWORD of YOUR BOT DISCORD>);
     ftp_pasv($conn_id, true);
     $h = fopen('php://temp', 'r+');
     ftp_fget($conn_id, $h, 'user.txt', FTP_BINARY, 0);
