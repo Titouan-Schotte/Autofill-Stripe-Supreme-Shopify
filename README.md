@@ -39,7 +39,7 @@ You will therefore need web hosting and a domain name.
 ![Discord bot OAuth2](https://i.ibb.co/0V4S1Pt/image.png)
 
 
--> You must fill this variables with your discord bot OAuth2 public and secret ID.
+-> You must fill this variables with your discord bot OAuth2 public and secret ID in the index.php file at lines 28-29.
 
 ![Discord bot auth](https://i.ibb.co/0VDjCqL/image.png)
 ## Autofill
