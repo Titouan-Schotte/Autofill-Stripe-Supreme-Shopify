@@ -44,5 +44,7 @@ You will now need to modify a few short lines of code to replace the base domain
 -> At line 17 of the `popup/popup.js` with your domain website.
 
 And it should work perfectly!
+
 ![Auth button](https://i.ibb.co/27R65VR/image.png)
+
 If you have any questions about how it works, don't hesitate.
