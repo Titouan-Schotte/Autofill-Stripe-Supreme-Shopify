@@ -1,5 +1,5 @@
 # What is an autofill?
-An autofill is a small extension on your browser that allows you to automatically fill out a payment form on sites.
+An autofill is a small chrome extension on your browser that allows you to automatically fill out a payment form on sites.
 This autofill that I offer is at the origin of a paid order and is suitable for the following sites:
 - Stripe
 - All sites created with Shopify
