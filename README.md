@@ -12,7 +12,7 @@ Originally this product was chargeable and you are free to make it chargeable!
 The payment system was made by paying access to a Discord server using Stripe which offers this type of service.
 You need a discord bot on your discord server that logs in as new ones arrive on your server. So your bot contains a small .txt file with all the identifiers of the people authorized to use the autofill.
 
-So you must host the bot contained in the folder named "BOTDISCORD"
+So you must host the bot contained in the folder named "**BOTDISCORD**"
 
 -> Copy the entire folder
 
@@ -27,7 +27,7 @@ Following this, you will need web hosting to manage the connection between your 
 Indeed, once the discord bot has recorded the discord account in its .txt file, you must now verify that a user of your autofill is listed in the autofill!
 So we need a website that manages the bridge between discord and your autofill.
 
-The site that I propose to you in the "SITEAUTH" folder offers a new user of your autofill to connect to his discord account to check if he is one of the people registered in the .txt file of the discord bot.
+The site that I propose to you in the "**SITEAUTH**" folder offers a new user of your autofill to connect to his discord account to check if he is one of the people registered in the .txt file of the discord bot.
 
 You will therefore need web hosting and a domain name.
 
