@@ -34,6 +34,14 @@ The site that I propose to you in the "**SITEAUTH**" folder offers a new user of
 
 You will therefore need web hosting and a domain name.
 
+-> Go on https://discord.com/developers/applications/ select your bot application and go on the OAuth2 tab. And fill it with your domain name.
+
+![Discord bot OAuth2](https://i.ibb.co/0V4S1Pt/image.png)
+
+
+-> You must fill this variables with your discord bot OAuth2 public and secret ID.
+
+![Discord bot auth](https://i.ibb.co/0VDjCqL/image.png)
 ## Autofill
 
 Once you have completed the two steps above, you've done the hard part!
