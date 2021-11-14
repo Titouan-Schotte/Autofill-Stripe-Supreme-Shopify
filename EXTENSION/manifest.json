@@ -54,14 +54,8 @@
       "matches": [
         "https://*.shopifycs.com/*"
       ]
-    },
-    {
-      "all_frames": true,
-      "js": ["popup/auth.js"],
-      "matches": [
-        "YOUR DOMAIN NAME"
-      ]
     }
+
   ],
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "icons": {

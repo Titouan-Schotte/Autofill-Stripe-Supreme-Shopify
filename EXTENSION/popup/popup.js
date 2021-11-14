@@ -14,7 +14,7 @@ function LoadUnconnectComponents(){
     document.getElementById('app').innerHTML = "<center>" +
         "        <h1>👻 Titoune Autofill</h1>" +
         "        <br>" +
-        "        <a href='YOUR DOMAIN WEBSITE' target=\"_blank\"><button id='auth'>Authentifiez vous !</button></a><br><br><br><br><br>" +
+        "        <a href='YOUR DOMAIN WEBSITE' target=\"_blank\"><button id='auth'>Authenticate yourself !</button></a><br><br><br><br><br>" +
         "        <p style='margin-left: auto; color: white'>If this page is still displayed even after authentification, please click again on the button !</p>"
     document.getElementById('auth').addEventListener('click', function () {
         // chrome.runtime.sendMessage({ message: 'login' }, function (response) {
