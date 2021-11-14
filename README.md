@@ -5,8 +5,8 @@ This autofill that I offer is at the origin of a paid order and is suitable for 
 - All sites created with Shopify
 - Supreme
 
-![Autofill presentation](https://i.ibb.co/jfsvqmZ/image.png)
-
+![Autofill Presentation](https://i.ibb.co/jfsvqmZ/image.png)
+![Autofill Settings](https://i.ibb.co/nr76sS7/image.png)
 # How it works ?
 
 ## Discord Bot
