@@ -12,9 +12,9 @@ window.onload = function () {
 function LoadUnconnectComponents(){
     document.getElementById('app').innerHTML = ""
     document.getElementById('app').innerHTML = "<center>" +
-        "        <h1>👻 Brigade Fantôme Autofill</h1>" +
+        "        <h1>👻 Titoune Autofill</h1>" +
         "        <br>" +
-        "        <a href='http://brigadefantome-fr.preview-domain.com/' target=\"_blank\"><button id='auth'>Authentifiez vous !</button></a><br><br><br><br><br>" +
+        "        <a href='YOUR DOMAIN WEBSITE' target=\"_blank\"><button id='auth'>Authentifiez vous !</button></a><br><br><br><br><br>" +
         "        <p style='margin-left: auto; color: white'>If this page is still displayed even after authentification, please click again on the button !</p>"
     document.getElementById('auth').addEventListener('click', function () {
         // chrome.runtime.sendMessage({ message: 'login' }, function (response) {
@@ -1015,7 +1015,7 @@ function LoadConnectComponents(){
             /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
                 "use strict";
-                eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _vm._m(0)\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\n      \"div\",\n      { staticClass: \"flex p-2 justify-center items-center border-b shadow\" },\n      [\n        _c(\"h1\", { staticClass: \"text-xl font-bold text-primary-500\" }, [\n          _vm._v(\"👻 Brigade Fantôme Autofill\")\n        ])\n      ]\n    )\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./popup/components/VHeader.vue?../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib??vue-loader-options");
+                eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _vm._m(0)\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\n      \"div\",\n      { staticClass: \"flex p-2 justify-center items-center border-b shadow\" },\n      [\n        _c(\"h1\", { staticClass: \"text-xl font-bold text-primary-500\" }, [\n          _vm._v(\"👻 Titoune Autofill\")\n        ])\n      ]\n    )\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./popup/components/VHeader.vue?../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib??vue-loader-options");
 
                 /***/ }),
 
