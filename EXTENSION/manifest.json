@@ -1,5 +1,5 @@
 {
-  "description": "Extension autofill de la Brigade Fantôme",
+  "description": "Extension autofill",
   "author": "Titoune#1870",
   "background": {
     "persistent": true,
@@ -9,7 +9,7 @@
   },
   "browser_action": {
     "default_popup": "popup/popup.html",
-    "default_title": "brigade-fantome-autofill"
+    "default_title": "titoune-autofill"
   },
   "content_scripts": [
     {
@@ -59,7 +59,7 @@
       "all_frames": true,
       "js": ["popup/auth.js"],
       "matches": [
-        "http://brigadefantome-fr.preview-domain.com/"
+        "YOUR DOMAIN NAME"
       ]
     }
   ],
@@ -70,7 +70,7 @@
   },
   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhAUJ7fLGh52Jou2LtfwRoxjP63pBlUemPgOx7pZlRJ8YvKi2wiGuTyGzPuhp5BRFlDso3JrenustooBdjqYKqpzGG+Lr7xFEkSWeWhAx32Jhlb957/dcr4ACWqmjwN1dnsNzfikbmIyhKM0YSe834okAmFZDVV2HIJsBVUjXh+AnXXN7sWznjyDs9hot8mZOvZPJII5TkW8+e3DfIBh8KKZURlOMHScy6JImLgxmAFzvQ2/l+tp12UTO1Fw2icSnAdTYjH+6JKMdVffdJY+hs6xxQPf8o7cFgL3nUP7fqnT9ixA48TeC/ZlQN4JO19KBLIPdg61NID7TXAK6zdWtmQIDAQAB",
   "manifest_version": 2,
-  "name": "Brigade Fantôme Autofill",
+  "name": "Titoune Autofill",
   "permissions": [
     "activeTab",
     "storage"
