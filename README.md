@@ -35,9 +35,10 @@ You will therefore need web hosting and a domain name.
 
 Once you have completed the two steps above, you've done the hard part!
 You will now need to modify a few short lines of code to replace the base domain name with the domain name of your site.
-At line 62 of the manifest.json with your domain website.
 
-At line 17 of the popup / popup.js with your domain website.
+-> At line 62 of the `manifest.json` with your domain website.
+
+-> At line 17 of the `popup/popup.js` with your domain website.
 
 And it should work perfectly!
 If you have any questions about how it works, don't hesitate.
