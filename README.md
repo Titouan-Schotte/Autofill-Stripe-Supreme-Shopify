@@ -5,9 +5,10 @@ This autofill that I offer is at the origin of a paid order and is suitable for 
 - All sites created with Shopify
 - Supreme
 
-![Autofill Presentation](https://i.ibb.co/jfsvqmZ/image.png)
+![Autofill Presentation](https://user-images.githubusercontent.com/73279480/147585275-91ffa2f0-eebe-4db2-ba87-86e7e9601071.png)
 
-![Autofill Settings](https://i.ibb.co/nr76sS7/image.png)
+![Autofill Settings](https://user-images.githubusercontent.com/73279480/147585304-3d6b6fd1-9a8c-48de-8bc4-2689c7cc4bd7.png)
+
 # How it works ?
 
 ## Discord Bot
@@ -36,12 +37,11 @@ You will therefore need web hosting and a domain name.
 
 -> Go on https://discord.com/developers/applications/ select your bot application and go on the OAuth2 tab. And fill it with your domain name.
 
-![Discord bot OAuth2](https://i.ibb.co/0V4S1Pt/image.png)
-
+![Discord bot OAuth2](https://user-images.githubusercontent.com/73279480/147585348-8c69efed-bd5d-4780-9255-2d40a2020748.png)
 
 -> You must fill this variables with your discord bot OAuth2 public and secret ID in the index.php file at lines 28-29.
 
-![Discord bot auth](https://i.ibb.co/0VDjCqL/image.png)
+![Discord bot auth](https://user-images.githubusercontent.com/73279480/147585386-dcd8455b-ac67-404a-9ea6-02b292c1e739.png)
 ## Autofill
 
 Once you have completed the two steps above, you've done the hard part!
@@ -53,6 +53,6 @@ You will now need to modify a few short lines of code to replace the base domain
 
 And it should work perfectly!
 
-![Auth button](https://i.ibb.co/27R65VR/image.png)
+![Auth button](https://user-images.githubusercontent.com/73279480/147585411-bf98e71b-ce44-4443-b822-cdf48f5a89fe.png)
 
 If you have any questions about how it works, don't hesitate.
